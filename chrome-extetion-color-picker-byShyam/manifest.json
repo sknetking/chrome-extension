@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Color Picker Extension",
     "version": "1.0",
     "description": "Select and store colors.",
@@ -8,7 +8,7 @@
       "activeTab",
       "tabs"
     ],
-    "browser_action": {
+    "action": {
       "default_popup": "popup.html",
       "default_icon": {
         "16": "s.png",
