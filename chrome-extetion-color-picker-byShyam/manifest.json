@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "Color Picker Extension",
+    "version": "1.0",
+    "description": "Select and store colors.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "tabs"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "s.png",
+        "48": "s.png",
+        "128": "s.png"
+      },
+      "default_title": "Color Picker By- SK NetKing"
+    },
+   "icons": {
+      "16": "s.png",
+      "48": "s.png",
+      "128": "s.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+      },
+      "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"],
+          "run_at": "document_start"
+        }
+      ]
+    }
+  
