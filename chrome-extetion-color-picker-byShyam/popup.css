@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     width: 300px;
-    min-height:300px;
+    min-height:fit-content;
     background-color: #f4f4f4;
 }
 
@@ -82,7 +82,13 @@ button:hover {
 /* popup.css */
 
 /* Existing styles */
-
+footer a { text-decoration:none; border-radius:8px; }
+footer a:hover{
+    background:#0000ff;
+    color:#fff;
+    border:solid 1px #000000;
+    border-radius:8px;
+}
 footer {
     bottom: 0;
     width: 100%;
@@ -115,3 +121,4 @@ footer a {
 #resetColors:hover {
     background-color: #c82333;
 }
+
